@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    
+    "name": "ASP.NET",
+    "version": "0.0.0",
+    "devDependencies": {
+    "gulp": "3.8.11",
+    "gulp-concat": "2.5.2",
+    "gulp-cssmin": "0.1.7",
+    "gulp-uglify": "1.2.0",
+    "rimraf": "2.2.8",
+    
+    "declaration": false,
+    "stripInternal": true,
+    "noEmitOnError": false,
+    "rootDir": ".",
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+
+  "exclude": [
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ]
+}
+
