@@ -1,0 +1,39 @@
+<nav class="navbar-static-top navbar-default" id="home">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+    
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+    Menu</button>
+    <div class="collapse navbar-collapse navHeaderCollapse">
+
+    <ul class="nav nav-pills navbar-left">
+        <li [class.active]="viewMode == 'home'"><a href="#" (click)="viewMode = 'home'">Home</a></li>
+        <li [class.active]="viewMode == 'about'"><a href="#" (click)="viewMode = 'about'">About</a></li>
+        <li [class.active]="viewMode == 'portfolio'"><a href="#" (click)="viewMode = 'portfolio'">Portfolio</a>
+            </li>
+        <li [class.active]="viewMode == 'contact'"><a href="mailto:barry@lekkerit.com" (click)="viewMode = 'contact'">Contact</a></li>
+        <li [class.active]="viewMode == 'desk'"><a href="http://www.lekkerit.com/desk" (click)="viewMode = 'desk'">Desk</a></li>
+    </ul>
+    
+    <a class="nav-brand" href="#">
+        <img src="./logo.png"
+            alt="responsive-image" 
+            class="logo" 
+            id="responsive-image">
+    </a>
+
+    <div class="zippy-page" [ngSwitch]="viewMode">
+        <template [ngSwitchWhen]="'home'" ngSwitchDefault><lekker-jumbotron></lekker-jumbotron></template>
+        <template [ngSwitchWhen]="'about'"><lekker-about-me></lekker-about-me></template>
+        <template [ngSwitchWhen]="'portfolio'">
+            <zippy-smiton heading="Freelance Developer"></zippy-smiton>
+            <zippy heading="Scrum Master"></zippy>                
+            <zippy-bootstrap heading="Bootstrap"></zippy-bootstrap>
+            <zippy-weather heading="Applications"></zippy-weather>
+        </template>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </nav>
