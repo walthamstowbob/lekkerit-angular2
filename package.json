@@ -1,0 +1,22 @@
+{
+  "name": "lekkerit-angular2",
+  "version": "1.0.0",
+  "description": "this is my angular2 demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walthamstowbob/lekkerit-angular2.git"
+  },
+  "author": "Barry O'Brien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walthamstowbob/lekkerit-angular2/issues"
+  },
+  "homepage": "https://github.com/walthamstowbob/lekkerit-angular2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
