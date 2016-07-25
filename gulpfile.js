@@ -1,0 +1,24 @@
+// /////////////////////////////////////////
+// Required
+// /////////////////////////////////////////
+
+var gulp = require('gulp'),
+    uglify = require('gulp-uglify');
+    rename = require('gulp-rename');
+
+// /////////////////////////////////////////
+// Script Tasks
+// /////////////////////////////////////////
+
+gulp.task('scripts',function(){
+    gulp.src(['app/js/**/*.js', '!app/js/**/*/.min.js'])
+    .pipe(rename({suffix:'.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js'));
+});
+
+// /////////////////////////////////////////
+// Default Tasks
+// /////////////////////////////////////////
+
+gulp.task('default', ['scripts']);
